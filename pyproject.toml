@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cougar-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Weaver Goldman <we.goldm@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cougar_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.17.0"
+pandas = "^1.5.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
